@@ -3,6 +3,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:pokenmon_mobile_app/pages/pokemon_info_screen.dart';
+import 'package:pokenmon_mobile_app/pages/search_page.dart';
 
 
 class HomeScreen extends StatefulWidget {
@@ -36,7 +37,20 @@ class _HomeScreenState extends State<HomeScreen> {
         .of(context)
         .size
         .width;
+    Icon customIcon = const Icon(Icons.search);
+    Widget customSearchBar = const Text('Search Pokemon by Name');
     return Scaffold(
+        appBar: AppBar(
+          title: const Text('Search Pokemon by Name'),
+          actions: [
+            IconButton(
+              onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => SearchPage())),
+              icon: const Icon(Icons.search),
+            )
+          ],
+          // centerTitle: true,
+        ),
+      // backgroundColor: Colors.black,
         body: Stack(
             children: [
               // Background Image
@@ -51,7 +65,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
               // Home Screen Title
               Positioned(
-                  top: 50,
+                  top: 30,
                   left: 20,
                   child: Text("POKEMON GO \nCatch Y'all", style: TextStyle(
                       fontFamily: 'Poppins',

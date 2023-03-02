@@ -36,7 +36,10 @@ dependencies:
   cupertino_icons: ^1.0.2
   http: ^0.13.5
   cached_network_image: ^3.2.3
-
+  shared_preferences: ^2.0.18
+  provider: ^6.0.5
+  day_night_switcher: ^0.2.0+1
+  animated_theme_switcher: ^2.0.6
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -47,6 +50,7 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^1.0.0
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
