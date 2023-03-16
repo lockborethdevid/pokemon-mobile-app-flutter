@@ -36,7 +36,12 @@ dependencies:
   cupertino_icons: ^1.0.2
   http: ^0.13.5
   cached_network_image: ^3.2.3
-
+  flutter_bloc: ^8.1.2
+  equatable: ^2.0.5
+  shared_preferences: ^2.0.18
+  provider: ^6.0.5
+  get: ^4.6.5
+  hydrated_bloc: ^9.1.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
